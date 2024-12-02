@@ -73,10 +73,34 @@ async def connect_to_wss(socks5_proxy, user_id):
 
 async def main():
     # TODO 修改user_id
-    _user_id = 'user_id'
+    _user_id = '2oRC5IKxfweW3db497nQyvNAOZz'
     # TODO 修改代理列表
     socks5_proxy_list = [
-        'socks5://user:pwd@ip:port',
+        'socks5://USER193034-zone-custom-region-US-session-50548882-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-23621716-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-16400365-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-72094978-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-13020281-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-27035369-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-15624744-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-98793753-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-36109756-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-41122099-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-85355972-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-42061279-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-44257612-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-28724641-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-11389023-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-69369651-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-20762907-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-18445864-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-94876485-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-34859621-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-96021728-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-32896204-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-95918677-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-23372920-sessTime-180:nakamiel123@as.711proxy.com:10000
+socks5://USER193034-zone-custom-region-US-session-98175208-sessTime-180:nakamiel123@as.711proxy.com:10000',
     ]
     tasks = [asyncio.ensure_future(connect_to_wss(i, _user_id)) for i in socks5_proxy_list]
     await asyncio.gather(*tasks)
